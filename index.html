@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор вкладов</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+</head>
+<body>
+<div class="wrapper">
+<div class="slider-container"><!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+            <img class="slider-image" src="images/logo1.png"/>
+        </div>
+        <div class="swiper-slide">
+            <img class="slider-image" src="images/logo2.png"/>
+        </div>
+        <div class="swiper-slide">
+            <img class="slider-image" src="images/logo3.png"/>
+        </div>
+        <div class="swiper-slide">
+            <img class="slider-image" src="images/logo4.png"/>
+        </div>
+        <div class="swiper-slide">
+            <img class="slider-image" src="images/logo5.png"/>
+        </div>
+        <div class="swiper-slide">
+            <img class="slider-image" src="images/logo6.png"/>
+        </div>
+        <div class="swiper-slide">
+            <img class="slider-image" src="images/logo7.png"/>
+        </div>
+        <div class="swiper-slide">
+            <img class="slider-image" src="images/logo8.png"/>
+        </div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+</div>
+</div>
+    <div class="calculator-wrapper">
+        <div class="calculator-settings">
+            <select name="deposit-type" id="deposit-type-combobox">
+
+            </select>
+            <select name="deposit" id="deposit-combobox">
+
+            </select>
+
+            <input type="number" id="deposit-sum" name="deposit-sum" placeholder="Сумма, руб"/>
+            <button id="calculate-button" type="button">Рассчитать</button>
+        </div>
+        <div class="calculator-results">
+            <p id="result-text"></p>
+        </div>
+    </div>
+</div>
+
+<script type="module" src="scripts/slider.js"></script>
+<script type="module" src="scripts/app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+</html>
