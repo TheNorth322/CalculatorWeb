@@ -30,7 +30,7 @@ depositSumInput.addEventListener("change", function () {
 });
 
 calculateButton.addEventListener("click", function () {
-    if (selectedDepositIndex == null || depositSum == null) {
+    if (selectedDepositIndex == null || depositSum == null || Number.isNaN(depositSum)) {
         resultText.textContent = "Заполните поля калькулятора";
         return;
     }
